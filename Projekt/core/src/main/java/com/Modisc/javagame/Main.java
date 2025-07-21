@@ -48,7 +48,7 @@ public class Main extends ApplicationAdapter {
         if (Gdx.input.isKeyPressed(Input.Keys.LEFT))  x -= speed * delta;
         if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) x += speed * delta;
         if (Gdx.input.isKeyPressed(Input.Keys.UP))    y += speed * delta;
-        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN))  y -= speed * delta;
 
         //Kamera zentriert auf den Spieler
         camera.position.set(x + playerTexture.getWidth() / 2f, y + playerTexture.getHeight() / 2f, 0);
