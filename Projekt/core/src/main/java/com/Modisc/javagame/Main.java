@@ -26,7 +26,7 @@ public class Main extends ApplicationAdapter {
     @Override
     public void create() {
         batch = new SpriteBatch();
-        playerTexture = new Texture("char_walk_right.gif");
+        playerTexture = new Texture("Characters/char_walk_left.gif");
         x = 100;
         y = 100;
 
@@ -35,9 +35,8 @@ public class Main extends ApplicationAdapter {
         camera.setToOrtho(false, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
         // Map laden
-        map = new TmxMapLoader().load("TestKarte.tmx");
+        map = new TmxMapLoader().load("Karten/Grasland/Karte1.tmx");
         mapRenderer = new OrthogonalTiledMapRenderer(map);
-
     }
 
     @Override
